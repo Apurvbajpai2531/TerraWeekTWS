@@ -195,19 +195,35 @@ This configuration creates an **example.txt** file locally, with its name and co
 
 # 📸 Screenshots
 
-## 📝 Terraform Configuration (`variables.tf` & `main.tf`)
+## 📝 Terraform Configuration (`variables.tf`)
 
-This screenshot shows the variable declarations and the resource block referencing them.
+This screenshot shows the variable declarations for `filename` and `content`.
 
-![Terraform variables.tf and main.tf](maintf.png)
+![Terraform variables.tf](variablestf.png)
 
 ---
 
-## 💻 Terraform Commands Execution
+## 📝 Terraform Configuration (`main.tf`)
 
-This screenshot demonstrates the `init`, `plan`, and `apply` workflow, including the permission error and its resolution.
+This screenshot shows the resource block referencing the declared variables.
 
-![Terraform Commands](commands.png)
+![Terraform main.tf](maintf.png)
+
+---
+
+## 💻 Terraform Commands Execution – Part 1
+
+This screenshot demonstrates the `init` and `plan` steps, along with the permission error hit during `apply`.
+
+![Terraform Commands 1](cmd1.png)
+
+---
+
+## 💻 Terraform Commands Execution – Part 2
+
+This screenshot demonstrates the fix applied and the successful `apply` run afterward.
+
+![Terraform Commands 2](cmd2.png)
 
 ---
 
@@ -245,8 +261,10 @@ TerraWeek-Day2/
 │── README.md
 │── variables.tf
 │── main.tf
+│── variablestf.png
 │── maintf.png
-│── commands.png
+│── cmd1.png
+│── cmd2.png
 ```
 
 ---
